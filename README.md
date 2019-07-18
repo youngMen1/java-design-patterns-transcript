@@ -1,6 +1,6 @@
-<!-- the line below needs to be an empty line C: (its because kramdown isnt
-     that smart and dearly wants an empty line before a heading to be able to
-     display it as such, e.g. website) -->
+<!-- 下面的行需要是一个空行C :(因为kramdown不是
+     聪明而且非常想在标题之前想要一条空行
+     如此显示它，例如网站) -->
 
 # Design patterns implemented in Java
 
@@ -10,28 +10,28 @@
 
 # Introduction
 
-Design patterns are formalized best practices that the programmer can use to
-solve common problems when designing an application or system.
+设计模式是程序员可以使用的形式化最佳实践
+在设计应用程序或系统时解决常见问题。
 
-Design patterns can speed up the development process by providing tested, proven
-development paradigms.
+设计模式可以通过提供经过测试和验证的方式加速开发过程
+发展范式。
 
-Reusing design patterns helps to prevent subtle issues that can cause major
-problems, and it also improves code readability for coders and architects who
-are familiar with the patterns.
+重用设计模式有助于防止可能导致重大问题的细微问题
+问题，它还提高了编码人员和架构师的代码可读性
+熟悉模式。
 
 # Getting started
 
-Before you dive into the material, you should be familiar with various
+在深入研究材料之前，您应该熟悉各种材料
 [Programming/Software Design Principles](http://webpro.github.io/programming-principles/).
 
-All designs should be as simple as possible. You should start with KISS, YAGNI,
-and Do The Simplest Thing That Could Possibly Work principles. Complexity and
-patterns should only be introduced when they are needed for practical
-extensibility.
+所有设计都应尽可能简单。你应该从KISS，YAGNI开始，
+并做最简单的事可能工作原则。复杂性和
+只有在实际需要时才应引入模式
+可扩展性。
 
-Once you are familiar with these concepts you can start drilling down into
-patterns by any of the following approaches
+一旦熟悉了这些概念，就可以开始深入研究了这些概念
+通过以下任何方法的模式
 
  - Using difficulty tags, `Difficulty-Beginner`, `Difficulty-Intermediate` & `Difficulty-Expert`.
  - Using pattern categories, `Creational`, `Behavioral` and others.
@@ -39,8 +39,8 @@ patterns by any of the following approaches
 
 # How to contribute
 
-If you are willing to contribute to the project you will find the relevant information in our [developer wiki](https://github.com/iluwatar/java-design-patterns/wiki). We will help you and answer your questions in the [Gitter chatroom](https://gitter.im/iluwatar/java-design-patterns).
+如果您愿意为项目做出贡献，您可以在我们的网站上找到相关信息 [developer wiki](https://github.com/iluwatar/java-design-patterns/wiki). We will help you and answer your questions in the [Gitter chatroom](https://gitter.im/iluwatar/java-design-patterns).
 
 # License
 
-This project is licensed under the terms of the MIT license.
+该项目根据MIT许可条款获得许可。

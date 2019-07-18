@@ -86,7 +86,7 @@ public class App {
   }
   
   /**
-   * Program entry point
+   * 程序入口点
    * 
    * @param args
    *          command line args
