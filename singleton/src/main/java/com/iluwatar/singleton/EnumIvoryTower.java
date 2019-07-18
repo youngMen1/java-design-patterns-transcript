@@ -23,7 +23,7 @@
 package com.iluwatar.singleton;
 
 /**
- * Enum based singleton implementation. Effective Java 2nd Edition (Joshua Bloch) p. 18
+ * 基于枚举的单例实现。有效的Java第2版（Joshua Bloch）p。 18
  */
 public enum EnumIvoryTower {
 

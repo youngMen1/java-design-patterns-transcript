@@ -23,22 +23,24 @@
 package com.iluwatar.singleton;
 
 /**
- * Singleton class. Eagerly initialized static instance guarantees thread safety.
+ * 单身人士班。热切初始化的静态实例可确保线程安全。
  */
 public final class IvoryTower {
 
   /**
-   * Static to class instance of the class.
+   * 静态类的类实例。
    */
   private static final IvoryTower INSTANCE = new IvoryTower();
 
   /**
-   * Private constructor so nobody can instantiate the class.
+   * 私有构造函数，所以没有人可以实例化该类。
    */
-  private IvoryTower() {}
+  private IvoryTower() {
+
+  }
 
   /**
-   * To be called by user to obtain instance of the class.
+   * 由用户调用以获取类的实例。
    *
    * @return instance of the singleton.
    */

@@ -3,32 +3,31 @@ layout: pattern
 title: Singleton
 folder: singleton
 permalink: /patterns/singleton/
-categories: Creational
+categories: 创建型模式
 tags:
  - Java
  - Gang Of Four
- - Difficulty-Beginner
+ - Difficulty-初学者
 ---
 
 ## Intent
-Ensure a class only has one instance, and provide a global point of
-access to it.
+确保一个类只有一个实例，并提供全局点访问它。
 
 ![alt text](./etc/singleton_1.png "Singleton")
 
-## Applicability
-Use the Singleton pattern when
+## 适用性
+使用Singleton模式时
 
-* there must be exactly one instance of a class, and it must be accessible to clients from a well-known access point
-* when the sole instance should be extensible by subclassing, and clients should be able to use an extended instance without modifying their code
+* 必须只有一个类的实例，并且客户端必须可以从一个众所周知的访问点访问它
+* 当唯一实例应该通过子类化可扩展时，客户端应该能够使用扩展实例而无需修改其代码 
 
-## Typical Use Case
+## 典型用例
 
-* the logging class
-* managing a connection to a database
-* file manager
+* 记录类
+* 管理与数据库的连接
+* 文件管理器
 
-## Real world examples
+## 现实世界的例子
 
 * [java.lang.Runtime#getRuntime()](http://docs.oracle.com/javase/8/docs/api/java/lang/Runtime.html#getRuntime%28%29)
 

@@ -23,7 +23,7 @@
 package com.iluwatar.singleton;
 
 /**
- * Double check locking
+ * 双重检查锁定
  * <p/>
  * http://www.cs.umd.edu/~pugh/java/memoryModel/DoubleCheckedLocking.html
  * <p/>
@@ -36,22 +36,22 @@ public final class ThreadSafeDoubleCheckLocking {
   private static volatile ThreadSafeDoubleCheckLocking instance;
 
   /**
-   * private constructor to prevent client from instantiating.
+   * 私有构造函数，以防止客户端实例化。
    */
   private ThreadSafeDoubleCheckLocking() {
-    // to prevent instantiating by Reflection call
+    // 防止通过Reflection调用实例化
     if (instance != null) {
       throw new IllegalStateException("Already initialized.");
     }
   }
 
   /**
-   * Public accessor.
+   * 公共访问者。
    *
    * @return an instance of the class.
    */
   public static ThreadSafeDoubleCheckLocking getInstance() {
-    // local variable increases performance by 25 percent
+    // 局部变量使性能提高25％
     // Joshua Bloch "Effective Java, Second Edition", p. 283-284
     ThreadSafeDoubleCheckLocking result = instance;
     if (result == null) {

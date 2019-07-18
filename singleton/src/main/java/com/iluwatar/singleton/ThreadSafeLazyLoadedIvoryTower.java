@@ -23,11 +23,11 @@
 package com.iluwatar.singleton;
 
 /**
- * Thread-safe Singleton class. The instance is lazily initialized and thus needs synchronization
- * mechanism.
+ 线程安全的Singleton类。该实例被懒惰地初始化，因此需要同步
+ 机制。
  *
- * Note: if created by reflection then a singleton will not be created but multiple options in the
- * same classloader
+ 注意：如果通过反射创建，则不会创建单例，而是创建多个选项
+ 同一个类加载器
  */
 public final class ThreadSafeLazyLoadedIvoryTower {
 
@@ -36,7 +36,7 @@ public final class ThreadSafeLazyLoadedIvoryTower {
   private ThreadSafeLazyLoadedIvoryTower() {}
 
   /**
-   * The instance gets created only when it is called for first time. Lazy-loading
+   * 只有在第一次调用实例时才会创建实例。延迟加载
    */
   public  static synchronized ThreadSafeLazyLoadedIvoryTower getInstance() {
 
