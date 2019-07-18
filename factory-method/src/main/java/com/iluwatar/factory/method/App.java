@@ -24,16 +24,16 @@ package com.iluwatar.factory.method;
 
 /**
  * 
- * The Factory Method is a creational design pattern which uses factory methods to deal with the
- * problem of creating objects without specifying the exact class of object that will be created.
- * This is done by creating objects via calling a factory method either specified in an interface
- * and implemented by child classes, or implemented in a base class and optionally overridden by
- * derived classes—rather than by calling a constructor.
+ 工厂方法是一种创造性的设计模式，它使用工厂方法来处理
+ 创建对象的问题，而不指定将要创建的对象的确切类。
+ 这是通过调用接口中指定的工厂方法创建对象来完成的
+ 由子类实现，或在基类中实现，并可选择重写
+ 派生类 - 而不是通过调用构造函数。
  * <p>
- * In this Factory Method example we have an interface ({@link Blacksmith}) with a method for
- * creating objects ({@link Blacksmith#manufactureWeapon}). The concrete subclasses (
- * {@link OrcBlacksmith}, {@link ElfBlacksmith}) then override the method to produce objects of
- * their liking.
+ 在这个工厂方法示例中，我们有一个接口（{@link Blacksmith}），其中包含一个方法
+ 创建对象（{@link Blacksmith＃manufactureWeapon}）。具体子类（
+ {@link OrcBlacksmith}，{@link ElfBlacksmith}）然后重写方法以生成对象
+ 他们的喜好。
  * 
  */
 public class App {
@@ -41,12 +41,12 @@ public class App {
   private final Blacksmith blacksmith;
   
   /**
-   * Creates an instance of <code>App</code> which will use <code>blacksmith</code> to manufacture 
-   * the weapons for war.
-   * <code>App</code> is unaware which concrete implementation of {@link Blacksmith} it is using.
-   * The decision of which blacksmith implementation to use may depend on configuration, or
-   * the type of rival in war.
-   * @param blacksmith a non-null implementation of blacksmith
+   创建<code> App </ code>的实例，该实例将使用<code> blacksmith </ code>进行制作
+   战争的武器。
+   <code> App </ code>不知道它正在使用的{@link Blacksmith}的具体实现。
+   决定使用哪个铁匠实施可能取决于配置，或
+   战争中的对手类型。
+   @param blacksmith 是一个非空实现的铁匠
    */
   public App(Blacksmith blacksmith) {
     this.blacksmith = blacksmith;
@@ -58,11 +58,11 @@ public class App {
    * @param args command line args
    */
   public static void main(String[] args) {
-    // Lets go to war with Orc weapons
+    // 让我们用兽人武器开战
     App app = new App(new OrcBlacksmith());
     app.manufactureWeapons();
     
-    // Lets go to war with Elf weapons
+    // 让我们与精灵武器开战
     app = new App(new ElfBlacksmith());
     app.manufactureWeapons();
   }

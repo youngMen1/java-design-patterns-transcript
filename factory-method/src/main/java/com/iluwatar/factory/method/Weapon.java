@@ -23,7 +23,7 @@
 package com.iluwatar.factory.method;
 
 /**
- * Weapon interface.
+ * 武器 interface.
  */
 public interface Weapon {
 

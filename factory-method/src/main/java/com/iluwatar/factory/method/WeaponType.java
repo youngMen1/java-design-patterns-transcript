@@ -25,20 +25,23 @@ package com.iluwatar.factory.method;
 /**
  * 
  * WeaponType enumeration
+ * 武器类型
  *
  */
 public enum WeaponType {
 
-  SHORT_SWORD("short sword"), SPEAR("spear"), AXE("axe"), UNDEFINED("");
+  SHORT_SWORD("short sword","短剑"), SPEAR("spear","矛"), AXE("axe","斧头"), UNDEFINED("","");
 
   private String title;
+  private String description;
 
-  WeaponType(String title) {
+  WeaponType(String title,String description) {
     this.title = title;
+    this.description = description;
   }
 
   @Override
   public String toString() {
-    return title;
+    return description;
   }
 }

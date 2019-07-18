@@ -24,7 +24,7 @@ package com.iluwatar.factory.method;
 
 /**
  * 
- * Concrete subclass for creating new objects.
+ * 用于创建新对象的具体子类。
  * 
  */
 public class ElfBlacksmith implements Blacksmith {
