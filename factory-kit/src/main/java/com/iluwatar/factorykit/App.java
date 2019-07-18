@@ -23,17 +23,17 @@
 package com.iluwatar.factorykit;
 
 /**
- * Factory-kit is a creational pattern which defines a factory of immutable content
- * with separated builder and factory interfaces to deal with the problem of
- * creating one of the objects specified directly in the factory-kit instance.
+ Factory-kit是一种创建模式，它定义了一个不可变内容的工厂
+ 用分离的构建器和工厂接口来处理问题
+ 创建直接在factory-kit实例中指定的对象之一。
  *
  * <p>
- * In the given example {@link WeaponFactory} represents the factory-kit, that contains
- * four {@link Builder}s for creating new objects of
- * the classes implementing {@link Weapon} interface.
- * <br>Each of them can be called with {@link WeaponFactory#create(WeaponType)} method, with
- * an input representing an instance of {@link WeaponType} that needs to
- * be mapped explicitly with desired class type in the factory instance.
+ 在给定的示例中，{@link WeaponFactory}表示包含的工厂工具包
+ 用于创建新对象的四个{@link Builder}
+ 实现{@link Weapon}接口的类。
+ <br>每个人都可以使用{@link WeaponFactory #create（WeaponType）}方法调用
+ 表示需要的{@link WeaponType}实例的输入
+ 在工厂实例中使用所需的类类型显式映射。
  */
 public class App {
   /**

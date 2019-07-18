@@ -23,7 +23,7 @@
 package com.iluwatar.factorykit;
 
 /**
- * Interface representing weapon.
+ * Interface 代表武器。
  */
 public interface Weapon {
 }

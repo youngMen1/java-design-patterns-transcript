@@ -27,28 +27,28 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 /**
- * Functional interface, an example of the factory-kit design pattern.
- * <br>Instance created locally gives an opportunity to strictly define
- * which objects types the instance of a factory will be able to create.
- * <br>Factory is a placeholder for {@link Builder}s
- * with {@link WeaponFactory#create(WeaponType)} method to initialize new objects.
+  功能界面，工厂套件设计模式的一个例子。
+  <br>本地创建的实例提供了严格定义的机会
+  工厂实例将能够创建哪些对象类型。
+  <br> Factory是{@link Builder}的占位符
+  使用{@link WeaponFactory #create（WeaponType）}方法初始化新对象。
  */
 public interface WeaponFactory {
 
   /**
-   * Creates an instance of the given type.
-   * @param name representing enum of an object type to be created.
+   * 创建给定类型的实例。
+   * @param name 表示要创建的对象类型的枚举。
    * @return new instance of a requested class implementing {@link Weapon} interface.
    */
   Weapon create(WeaponType name);
 
   /**
-   * Creates factory - placeholder for specified {@link Builder}s.
-   * @param consumer for the new builder to the factory.
+   * 创建工厂 - 指定的占位符 {@link Builder}s.
+   * @param consumer 为工厂的新建筑工人。
    * @return factory with specified {@link Builder}s
    */
   static WeaponFactory factory(Consumer<Builder> consumer) {
-    HashMap<WeaponType, Supplier<Weapon>> map = new HashMap<>();
+    HashMap<WeaponType, Supplier<Weapon>> map = new HashMap<>(16);
     consumer.accept(map::put);
     return name -> map.get(name).get();
   }

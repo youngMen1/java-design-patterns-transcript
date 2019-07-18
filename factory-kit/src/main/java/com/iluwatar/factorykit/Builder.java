@@ -25,7 +25,7 @@ package com.iluwatar.factorykit;
 import java.util.function.Supplier;
 
 /**
- * Functional interface that allows adding builder with name to the factory.
+ * 功能接口，允许向工厂添加带名称的构建器。
  */
 public interface Builder {
   void add(WeaponType name, Supplier<Weapon> supplier);
